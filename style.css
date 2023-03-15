@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+#navbarNav{
+    justify-content: end; 
+}
+.navbar__logo a {
+  color: #333;
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__item {
+  margin: 0 10px;
+}
+
+.navbar__link {
+  color: #333;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar__link:hover {
+  color: #007bff;
+}
+
+.container {
+  max-width: 600px;
+  margin: 100px auto;
+  text-align: center;
+  padding: 3em 2em 1em;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.container input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #f5f5f5;
+}
+
+.container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  appearance: none;
+  background-color: #f5f5f5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%236f6f6f' d='M2.7 2.2L0 4.9l2.7 2.7 1.4-1.4L3.8 4.9l.3-.3-1.4-1.4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: auto 50%;
+  cursor: pointer;
+}
+
+.container select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #0085ff;
+}
+
+.container input[type="text"]::placeholder,
+.container input[type="number"]::placeholder {
+  color: #aaa;
+}
+
+.container button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  width: 60%;
+  padding: 0.9em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.container button:hover {
+  background-color: #0066cc;
+}
+.table{
+    max-width: 80%;
+    padding: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #555;
+}
+
+td {
+  font-size: 16px;
+  color: #333;
+}
+
+.total {
+  font-weight: bold;
+  text-align: right;
+}
+#error-message {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 0.75rem 1.25rem;
+    margin-top: 1rem;
+  }
